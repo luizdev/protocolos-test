@@ -27,8 +27,8 @@
 											<label>Password</label>
 											<input class="form-control form-control-lg" type="password" name="password" placeholder="Enter your password" />
 											<small>
-            <a href="pages-reset-password.html">Forgot password?</a>
-          </small>
+												<a href="pages-reset-password.html">Forgot password?</a>
+											</small>
 										</div>
 										<div>
 											<div class="custom-control custom-checkbox align-items-center">
@@ -61,39 +61,3 @@ export default {
 }
 </script>
 
-<style lang="scss">
-  .login-form{
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
-    justify-content: center;
-    width: 100%;
-    min-height: 100%;
-    padding: 20px;
-    height: 100vh;
-  }
-  .login-form {
-    max-width: 340px;
-    margin: 0 auto;
-    .head{
-      img{
-        width: 100%;
-        max-width: 150px;
-        margin-bottom: 1em;
-      }
-    }
-  }
-    .login-form form {
-    }
-    .login-form h2 {
-        margin: 0 0 15px;
-    }
-    .form-control, .btn {
-        min-height: 38px;
-        border-radius: 2px;
-    }
-    .btn {        
-        font-size: 15px;
-        font-weight: bold;
-    }
-</style>

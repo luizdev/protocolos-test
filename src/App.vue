@@ -1,11 +1,6 @@
 <template>
   <div id="app">
     <router-view/>
-    <!--<div class="container">
-      <div class="row">        
-        
-      </div>     
-    </div>-->
   </div>
 </template>
 
@@ -21,7 +16,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./assets/styles/styles.scss";
+//@import "./assets/styles/styles.scss";
 body{
   background: #fbfbfb;
 }
