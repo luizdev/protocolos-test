@@ -10,6 +10,7 @@ import Generacion_pago from './views/pages/Generacion_pago.vue'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/login',
@@ -51,7 +52,7 @@ export default new Router({
 
     /*
 
-    
+
     {
       path: '/home',
       name: 'home',
