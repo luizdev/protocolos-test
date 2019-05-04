@@ -8,17 +8,15 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "core-js": "^2.6.5",
-    "vue": "^2.6.10",
-    "vue-router": "^3.0.3",
-    "vuex": "^3.0.1",
     "@babel/polyfill": "7.4.0",
     "@fortawesome/fontawesome-free": "5.8.1",
     "apexcharts": "3.6.5",
+    "axios": "^0.18.0",
     "bootstrap": "4.3.1",
     "bootstrap-daterangepicker": "3.0.3",
     "bootstrap-markdown": "2.10.0",
     "chart.js": "2.8.0",
+    "core-js": "^2.6.5",
     "datatables.net": "1.10.19",
     "datatables.net-bs4": "1.10.19",
     "datatables.net-buttons": "1.5.6",
@@ -41,7 +39,11 @@
     "simplebar": "2.6.1",
     "smartwizard": "4.3.1",
     "tempusdominus-bootstrap-4": "5.1.2",
-    "toastr": "2.1.4"
+    "toastr": "2.1.4",
+    "vue": "^2.6.10",
+    "vue-axios": "^2.1.4",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.6.0",
