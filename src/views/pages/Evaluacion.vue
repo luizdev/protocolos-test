@@ -4,10 +4,7 @@
 
     <div class="row">
       <div class="col-12">
-        <div class="card">
-          <div class="card-header">
-            <h5 class="card-title mb-0">Empty card</h5>
-          </div>
+        <div class="card">          
           <div class="card-body">
             
             <form>
@@ -28,7 +25,7 @@
                 </ul>
                 <div class="tab-content">
                   <div class="tab-pane  in active" id="attributes" name="attributes" role="tabpanel">
-                    <table class="table small">
+                    <table class="table">
                       <thead>
                         <tr>
                           <th scope="col">Aspecto</th>
