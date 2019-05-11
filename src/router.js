@@ -3,9 +3,12 @@ import Router from 'vue-router'
 import Home from './views/pages/Home.vue'
 import Login from './views/Login.vue'
 import DashView from './views/Dash.vue'
+import Informacion from './views/pages/Informacion.vue'
 import Evaluacion from './views/pages/Evaluacion.vue'
 import Informes from './views/pages/Informes.vue'
 import Generacion_pago from './views/pages/Generacion_pago.vue'
+import Crear_protocolo from './views/pages/Crear_protocolo.vue'
+import Todos_protocolos from './views/pages/Todos_protocolos.vue'
 
 Vue.use(Router)
 
@@ -33,6 +36,11 @@ export default new Router({
           component: Evaluacion
         },
         {
+          path: 'informacion',
+          name: 'informacion',
+          component: Informacion
+        },
+        {
           path: 'informes',
           name: 'informes',
           component: Informes
@@ -41,45 +49,23 @@ export default new Router({
           path: 'generacion-pago',
           name: 'generacionpago',
           component: Generacion_pago
-        }
+        },        
+        {
+          path: '/protocolos/',
+          name: 'protocolos',
+          component: Home          
+        },
+        {
+          path: '/protocolos/todos',
+          name: 'todos',
+          component: Todos_protocolos
+        },
+        {
+          path: '/protocolos/crear-protocolo',
+          name: 'crearprotocolo',
+          component: Crear_protocolo
+        },
       ]
-    }
-
-
-
-
-
-
-    /*
-
-
-    {
-      path: '/home',
-      name: 'home',
-      component: Home
-    },
-    {
-      path: '/evaluacion',
-      name: 'evaluacion',
-      component: Evaluacion
-    },
-    {
-      path: '/informes',
-      name: 'informes',
-      component: Informes
-    },
-    {
-      path: '/generacion-pago',
-      name: 'generacionpago',
-      component: Generacion_pago
-    },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('./views/About.vue')
-    }*/
+    }    
   ]
 })

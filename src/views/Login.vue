@@ -6,9 +6,9 @@
 					<div class="d-table-cell align-middle">
 
 						<div class="text-center mt-4">
-							<h1 class="h2">Welcome back, Chris</h1>
+							<!--<h1 class="h2">Welcome back, Chris</h1>-->
 							<p class="lead">
-								Sign in to your account to continue
+								Inicia sesión en tu cuenta para continuar
 							</p>
 						</div>
 
@@ -16,7 +16,8 @@
 							<div class="card-body">
 								<div class="m-sm-4">
 									<div class="text-center">
-										<img src="img/avatars/avatar.jpg" alt="Chris Wood" class="img-fluid rounded-circle" width="132" height="132" />
+										<img alt="Vue logo" src="http://asociacionafp.pe/wp-content/themes/asociacion/assets/logo.svg" width="150">
+										<!--<img src="img/avatars/avatar.jpg" alt="Chris Wood" class="img-fluid rounded-circle" width="132" height="132" />-->
 									</div>
 									<form>
 										<div class="form-group">
@@ -26,19 +27,19 @@
 										<div class="form-group">
 											<label>Password</label>
 											<input class="form-control form-control-lg" type="password" name="password" placeholder="Enter your password" />
-											<small>
+											<!--<small>
 												<a href="pages-reset-password.html">Forgot password?</a>
-											</small>
+											</small>-->
 										</div>
-										<div>
+										<!--<div>
 											<div class="custom-control custom-checkbox align-items-center">
 												<input type="checkbox" class="custom-control-input" value="remember-me" name="remember-me" checked>
 												<label class="custom-control-label text-small">Remember me next time</label>
 											</div>
-										</div>
+										</div>-->
 										<div class="text-center mt-3">
-											<a href="dashboard-default.html" class="btn btn-lg btn-primary">Sign in</a>
-											<!-- <button type="submit" class="btn btn-lg btn-primary">Sign in</button> -->
+								
+											<router-link to="/dashboard" tag="button" class="btn btn-primary">Continuar</router-link>
 										</div>
 									</form>
 								</div>

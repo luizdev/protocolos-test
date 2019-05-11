@@ -1,21 +1,4 @@
-import Vue from 'vue'
-import App from './App.vue'
-import sync  from 'vuex-router-sync'
-import router from './router'
-import store from './store'
-import axios from 'axios'
-import VueAxios from 'vue-axios'
-import config from './config'
-import jQuery from "jquery";
-import Bootstrap from "bootstrap/dist/js/bootstrap"
-//import AppJS from "../src/assets/js/app"
-//import AppJS from "../src/assets/js/app"
-
-Vue.use(VueAxios, axios)
-Vue.config.productionTip = false
-Vue.axios.defaults.baseURL = config.baseURL
-
-window.$ = jQuery
+import SimpleBar from "simplebar"; // Usage: https://github.com/Grsmto/simplebar
 
 $(function() {
   const simpleBarEnabled =
@@ -45,13 +28,3 @@ $(function() {
     parent.addClass("show");
   }
 });
-
-
-
-new Vue({
-  router,
-  store,
-  render: h => h(App)
-}).$mount('#app')
-
-

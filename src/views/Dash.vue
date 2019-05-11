@@ -9,7 +9,7 @@
 			<main class="content">
 				<div class="container-fluid p-0">
 
-          <router-view></router-view>
+          			<router-view></router-view>
 
 					
 

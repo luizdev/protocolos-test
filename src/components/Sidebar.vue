@@ -9,32 +9,39 @@
 
       <ul class="sidebar-nav">
         <li class="sidebar-header">Main</li>
-        <li class="sidebar-item active">
-          <a href="#dashboards" data-toggle="collapse" class="sidebar-link collapsed">
-            <i class="align-middle" data-feather="sliders"></i>
-            <span class="align-middle">Dashboard</span>
+
+        <li class="sidebar-item">
+          <router-link to="/dashboard" tag="link" class="sidebar-link">Nueva Evaluacion</router-link>       
+        </li>
+
+        <!--<li class="sidebar-item">
+          <router-link to="/crear-protocolo" tag="link" class="sidebar-link">Crear Protocolo</router-link>
+          <a class="sidebar-link" href="documentation.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book-open align-middle"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg> 
+            <span class="align-middle">Crear Protocolos</span>
           </a>
-          <ul id="dashboards" class="sidebar-dropdown list-unstyled collapse show">
+        </li>-->
+        <li class="sidebar-item active">
+          <a href="#protocolos" data-toggle="collapse" class="sidebar-link collapsed">
+            <i class="align-middle" data-feather="sliders"></i>
+            <span class="align-middle">Protocolos</span>
+          </a>
+          <ul id="protocolos" class="sidebar-dropdown list-unstyled collapse show">
             <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard-default.html">Default</a>
+              <router-link to="/protocolos/todos" tag="link" class="sidebar-link">Todos los protocolos</router-link>   
+              <!--<a class="sidebar-link" href="">Todos los protocolos</a>-->
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard-analytics.html">Analytics</a>
+              <router-link to="/protocolos/crear-protocolo" tag="link" class="sidebar-link">Añadir Protocolo</router-link> 
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard-e-commerce.html">E-commerce</a>
+              <a class="sidebar-link" href="">Añadir Pestañas y columnas</a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard-social.html">Social</a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="dashboard-crypto.html">
-                Crypto
-                <span class="sidebar-badge badge badge-primary">New</span>
-              </a>
+              <a class="sidebar-link" href="">Añadir Aspecto</a>
             </li>
           </ul>
-        </li> 
+        </li>
       </ul>
 
       <div class="sidebar-bottom d-none d-lg-block">
