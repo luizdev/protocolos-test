@@ -1,6 +1,8 @@
 // Theme colors
-$blue: #3086FF;
+$blue: #005D9B;
 $indigo: #6610f2;
+$bluedark: #1CA6DD;
+
 $purple: #6f42c1;
 $pink: #e83e8c;
 $red: #d9534f;
@@ -23,7 +25,7 @@ $gray-900: #212529;
 $black: #000;
 
 $primary:       $blue;
-$secondary:     $gray-700;
+$secondary:     $bluedark;
 $tertiary:      darken($blue, 10%);
 $success:       $green;
 $info:          $cyan;

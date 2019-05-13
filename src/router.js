@@ -8,6 +8,7 @@ import Evaluacion from './views/pages/Evaluacion.vue'
 import Informes from './views/pages/Informes.vue'
 import Generacion_pago from './views/pages/Generacion_pago.vue'
 import Crear_protocolo from './views/pages/Crear_protocolo.vue'
+import Crear_pestana from './views/pages/Crear_pestana.vue'
 import Todos_protocolos from './views/pages/Todos_protocolos.vue'
 
 Vue.use(Router)
@@ -64,6 +65,11 @@ export default new Router({
           path: '/protocolos/crear-protocolo',
           name: 'crearprotocolo',
           component: Crear_protocolo
+        },
+        {
+          path: '/protocolos/crear-pestana',
+          name: 'crearpestana',
+          component: Crear_pestana
         },
       ]
     }    

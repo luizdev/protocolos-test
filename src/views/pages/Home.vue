@@ -142,7 +142,7 @@
                   <div class="modal-body m-3">
                     <form>
                       <div class="form-group">
-                        <select class="form-control" id="exampleFormControlSelect1">
+                        <select class="form-control" id="cboProtocolo">
                           <option>protocolo 1</option>
                           <option>protocolo 2</option>
                           <option>protocolo 3</option>
