@@ -57,7 +57,7 @@ export default new Router({
           component: Home          
         },
         {
-          path: '/protocolos/todos',
+          path: '/protocolos/todos-protocolos',
           name: 'todos',
           component: Todos_protocolos
         },

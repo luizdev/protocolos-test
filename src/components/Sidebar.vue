@@ -32,13 +32,13 @@
           </a>
           <ul id="protocolos" class="sidebar-dropdown list-unstyled collapse"> 
             <li class="sidebar-item">
-              <router-link to="/protocolos/crear-protocolo" tag="link" class="sidebar-link">Añadir Protocolo</router-link> 
+              <router-link to="/protocolos/todos-protocolos" tag="link" class="sidebar-link">Todos los Protocolos</router-link> 
             </li>
             <li class="sidebar-item">
-              <router-link to="/protocolos/crear-pestana" tag="link" class="sidebar-link">Añadir Pestañas y columnas</router-link> 
+              <router-link to="/protocolos/todos-pestanas" tag="link" class="sidebar-link">Todas las Pestañas y Columnas</router-link> 
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="">Añadir Aspecto</a>
+              <router-link to="/protocolos/todos-aspectos" tag="link" class="sidebar-link">Todas las Pestañas y Columnas</router-link> 
             </li>
           </ul>
         </li>

@@ -44,21 +44,30 @@
             <div class="list-group">
               <ul class="list-group">
                 <li class="list-group-item">
-                  <a href="#" class="">Pestaña 1</a>
+                  <div class="list-group-item-head d-flex justify-content-between">
+                    <a href="#" class="">Pestaña 1</a>
+                    <span class="">Protocolo 1 </span>
+                  </div>
                   <div class="actions">
                     <a href="#"  class="card-link small">Editar</a>
                     <a href="#"  class="card-link small">Eliminar</a>
                   </div>
                 </li>
                 <li class="list-group-item">
-                  <a href="#" class="">Pestaña 2</a>
+                  <div class="list-group-item-head d-flex justify-content-between">
+                    <a href="#" class="">Pestaña 2</a>
+                    <span class="">Protocolo 1 </span>
+                  </div>
                   <div class="actions">
                     <a href="#"  class="card-link small">Editar</a>
                     <a href="#"  class="card-link small">Eliminar</a>
                   </div>
                 </li>
                 <li class="list-group-item">
-                  <a href="#" class="">Pestaña 3</a>
+                  <div class="list-group-item-head d-flex justify-content-between">
+                    <a href="#" class="">Pestaña 3</a>
+                    <span class="">Protocolo 2 </span>
+                  </div>
                   <div class="actions">
                     <a href="#"  class="card-link small">Editar</a>
                     <a href="#"  class="card-link small">Eliminar</a>
