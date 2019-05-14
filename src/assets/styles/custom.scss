@@ -6,3 +6,11 @@
     padding: 0.25em;
   }
 }
+
+.list-group-item{
+  .actions{
+    display: flex;
+    width: 44px;
+    justify-content: space-between;
+  }
+}

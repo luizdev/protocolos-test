@@ -41,7 +41,7 @@
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Todos las Pestañas</h5>
-            <div class="list-group">
+            <div class="cnt-list-group">
               <ul class="list-group">
                 <li class="list-group-item">
                   <div class="list-group-item-head d-flex justify-content-between">
