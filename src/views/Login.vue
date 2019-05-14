@@ -19,14 +19,24 @@
 										<img alt="Vue logo" src="http://asociacionafp.pe/wp-content/themes/asociacion/assets/logo.svg" width="150">
 										<!--<img src="img/avatars/avatar.jpg" alt="Chris Wood" class="img-fluid rounded-circle" width="132" height="132" />-->
 									</div>
-									<form>
+									<form method="" action="" @submit.prevent='submitLogin'>
 										<div class="form-group">
-											<label>Email</label>
-											<input class="form-control form-control-lg" type="email" name="email" placeholder="Enter your email" />
+											<label>Usuario</label>
+											<input v-model='login.username' class="form-control form-control-lg" type="text" name="username" placeholder="Enter your username" />
+                      <div class="text-danger" v-if='errors'>
+                      <p v-for='er in getError("username")'>
+                        {{er}}
+                      </p>
+                    </div>
 										</div>
 										<div class="form-group">
 											<label>Password</label>
-											<input class="form-control form-control-lg" type="password" name="password" placeholder="Enter your password" />
+											<input v-model='login.password' class="form-control form-control-lg" type="password" name="password" placeholder="Enter your password" />
+                      <div class="text-danger" v-if='errors'>
+                      <p v-for='er in getError("password")'>
+                        {{er}}
+                      </p>
+                    </div>
 											<!--<small>
 												<a href="pages-reset-password.html">Forgot password?</a>
 											</small>-->
@@ -37,9 +47,13 @@
 												<label class="custom-control-label text-small">Remember me next time</label>
 											</div>
 										</div>-->
+                    <div class="text-danger" v-if='errors'>
+                      <p v-for='er in getError("non_field_errors")'>
+                        {{er}}
+                      </p>
+                    </div>
 										<div class="text-center mt-3">
-								
-											<router-link to="/dashboard" tag="button" class="btn btn-primary">Continuar</router-link>
+                      <button class="btn btn-primary btn-large">Ingresar</button>
 										</div>
 									</form>
 								</div>
@@ -54,10 +68,36 @@
 
 </template>
 <script>
+import {setTokenData} from '@/utils/auth'
+import errorDj from '@/mixins/errorDj'
 export default {
   name: 'Login',
   props: {
-  
+
+  },
+  mixins: [errorDj],
+  data () {
+    return {
+      login: {
+        username: '',
+        password: ''
+      }
+    }
+  },
+  methods: {
+    submitLogin () {
+      const self = this
+      this.axios.post('/api/token-auth/', self.login)
+        .then((response) => {
+          let token = response.data.token
+          let user = response.data.user
+          setTokenData(token, user)
+          // self.$router.push({name: 'select_local'})
+        })
+        .catch((error) => {
+          self.errors = error.response.data
+        })
+    }
   }
 }
 </script>
