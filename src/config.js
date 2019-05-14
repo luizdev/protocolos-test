@@ -1,5 +1,5 @@
 const config = {
-  baseURL: 'http://localhost/sites/protocolo/'
+  baseURL: 'http://localhost:8000'
 
 }
 

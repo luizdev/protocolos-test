@@ -7,6 +7,7 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import config from './config'
 import jQuery from "jquery";
+import setupAxios from './utils/interceptors'
 import Bootstrap from "bootstrap/dist/js/bootstrap"
 //import AppJS from "../src/assets/js/app"
 //import AppJS from "../src/assets/js/app"
@@ -47,7 +48,7 @@ $(function() {
 });
 
 
-
+setupAxios()
 new Vue({
   router,
   store,

@@ -10,6 +10,7 @@ import Generacion_pago from './views/pages/Generacion_pago.vue'
 import Crear_protocolo from './views/pages/Crear_protocolo.vue'
 import Crear_pestana from './views/pages/Crear_pestana.vue'
 import Todos_protocolos from './views/pages/Todos_protocolos.vue'
+import middlewareAuth from '@/middleware/auth'
 
 Vue.use(Router)
 
@@ -50,11 +51,11 @@ export default new Router({
           path: 'generacion-pago',
           name: 'generacionpago',
           component: Generacion_pago
-        },        
+        },
         {
           path: '/protocolos/',
           name: 'protocolos',
-          component: Home          
+          component: Home
         },
         {
           path: '/protocolos/todos-protocolos',
@@ -72,6 +73,6 @@ export default new Router({
           component: Crear_pestana
         },
       ]
-    }    
+    }
   ]
 })
