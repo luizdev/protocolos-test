@@ -38,7 +38,7 @@
               <router-link to="/protocolos/todos-pestanas" tag="link" class="sidebar-link">Todas las Pestañas y Columnas</router-link> 
             </li>
             <li class="sidebar-item">
-              <router-link to="/protocolos/todos-aspectos" tag="link" class="sidebar-link">Todas las Pestañas y Columnas</router-link> 
+              <router-link to="/protocolos/todos-aspectos" tag="link" class="sidebar-link">Todas los Aspectos</router-link> 
             </li>
           </ul>
         </li>

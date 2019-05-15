@@ -8,8 +8,9 @@ import Evaluacion from './views/pages/Evaluacion.vue'
 import Informes from './views/pages/Informes.vue'
 import Generacion_pago from './views/pages/Generacion_pago.vue'
 import Todos_protocolos from './views/pages/protocolo/Todos_protocolos.vue'
+import Todos_pestanas from './views/pages/pestana/Todos_pestanas.vue'
 import Crear_protocolos from './views/pages/protocolo/Crear_protocolos.vue'
-import Crear_pestana from './views/pages/pestana/Crear_pestana.vue'
+import Crear_pestanas from './views/pages/pestana/Crear_pestanas.vue'
 import middlewareAuth from '@/middleware/auth'
 
 Vue.use(Router)
@@ -59,7 +60,7 @@ export default new Router({
         },
         {
           path: '/protocolos/todos-protocolos',
-          name: 'todos',
+          name: 'todosprotocolos',
           component: Todos_protocolos
         },
         {
@@ -68,9 +69,14 @@ export default new Router({
           component: Crear_protocolos
         },
         {
-          path: '/protocolos/crear-pestana',
+          path: '/protocolos/todos-pestanas',
+          name: 'todospestanas',
+          component: Todos_pestanas
+        },
+        {
+          path: '/protocolos/crear-pestanas',
           name: 'crearpestana',
-          component: Crear_pestana
+          component: Crear_pestanas
         },
       ]
     }

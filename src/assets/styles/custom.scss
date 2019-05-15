@@ -7,10 +7,22 @@
   }
 }
 
-.list-group-item{
-  .actions{
-    display: flex;
-    width: 44px;
-    justify-content: space-between;
+.list-group{
+  &.min{
+    font-size: 0.85em;
+    
+    .list-group-item{  
+      padding: 0.5rem 1rem;
+      .actions{
+        width: 22px;
+      }
+    }
+  }
+  .list-group-item{    
+    .actions{
+      display: flex;
+      width: 44px;
+      justify-content: space-between;
+    }
   }
 }
