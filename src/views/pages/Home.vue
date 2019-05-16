@@ -154,7 +154,7 @@
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-terciary" data-dismiss="modal">Cerrar</button>
-                    <router-link to="/evaluacion"  data-dismiss="modal" tag="button" class="btn btn-primary">Crear Evaluacion</router-link>
+                    <router-link to="/informacion"  data-dismiss="modal" tag="button" class="btn btn-primary">Crear Evaluacion</router-link>
                   </div>
                 </div>
               </div>

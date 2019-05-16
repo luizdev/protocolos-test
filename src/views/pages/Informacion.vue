@@ -36,6 +36,11 @@
 
                 </div>
               </div>
+              <div class="form-group row">
+                <div class="button-actions d-flex justify-content-end">
+                  <router-link to="/evaluacion" tag="button" class="btn btn-primary">Continuar</router-link>
+                </div>
+              </div>
             </form>
           </div>
         </div>
